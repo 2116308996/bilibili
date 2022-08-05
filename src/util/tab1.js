@@ -1,0 +1,97 @@
+const tab1=[{
+    id:1,
+    name:"这动画太好看了！",
+    image:'/image/1.jpg',
+    playback:756445,
+    comment:114521,
+    time:'04:29'
+},
+{
+    id:2,
+    name:"这动画太好看了！",
+    image:'/image/5.jpg',
+    playback:756445,
+    comment:114521,
+    time:'04:29'
+},
+{
+    id:3,
+    name:"这动画太好看了！",
+    image:'/image/6.jpg',
+    playback:756445,
+    comment:114521,
+    time:'04:29'
+},
+{
+    id:4,
+    name:"这动画太好看了！",
+    image:'/image/7.jpg',
+    playback:756445,
+    comment:114521,
+    time:'04:29'
+},
+{
+    id:5,
+    name:"这动画太好看了！",
+    image:'/image/8.jpg',
+    playback:756445,
+    comment:114521,
+    time:'04:29'
+},
+{
+    id:6,
+    name:"这动画太好看了！",
+    image:'/image/9.jpg',
+    playback:756445,
+    comment:114521,
+    time:'04:29'
+},
+{
+    id:7,
+    name:"这动画太好看了！",
+    image:'/image/10.jpg',
+    playback:756445,
+    comment:114521,
+    time:'04:29'
+},
+{
+    id:8,
+    name:"这动画太好看了！",
+    image:'/image/5.jpg',
+    playback:756445,
+    comment:114521,
+    time:'04:29'
+},
+{
+    id:9,
+    name:"这动画太好看了！",
+    image:'/image/6.jpg',
+    playback:756445,
+    comment:114521,
+    time:'04:29'
+},
+{
+    id:10,
+    name:"这动画太好看了！",
+    image:'/image/7.jpg',
+    playback:756445,
+    comment:114521,
+    time:'04:29'
+},
+{
+    id:10,
+    name:"这动画太好看了！",
+    image:'/image/8.jpg',
+    playback:756445,
+    comment:114521,
+    time:'04:29'
+},
+{
+    id:12,
+    name:"这动画太好看了！",
+    image:'/image/9.jpg',
+    playback:756445,
+    comment:114521,
+    time:'04:29'
+}]
+export default tab1

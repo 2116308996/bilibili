@@ -1,0 +1,79 @@
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Vuex from '../store/index'
+Vue.use(VueRouter)
+const routes=[
+    {
+        path:'/register',
+        component:()=>import('@/views/Register.vue')
+    },
+    {
+        path:'/home',
+        component:()=>import('@/views/Home.vue')
+    },
+    {
+        path:'/login',
+        component:()=>import('@/views/Login.vue')
+    },
+    {
+        path:'/userinfo',
+        component:()=>import('@/views/Userinfo.vue'),
+        meta:{
+            istoken:true
+        }
+    },
+    {
+        path:'/edit',
+        component:()=>import('@/views/Edit.vue'),
+        meta:{
+            istoken:true
+        }
+    },
+    {   name:'detail',
+        path:'/detail/:id',
+        component:()=>import('@/views/Detail.vue'),
+    },
+	{
+		path:'/search',
+		component:()=>import('@/views/Search.vue'),
+		meta:{
+		    istoken:true
+		}
+	},
+	{
+		path:'/gamestore',
+		component:()=>import('@/views/Gamestore.vue'),
+		meta:{
+		    istoken:true
+		}
+	},
+	{
+		path:'/message',
+		component:()=>import('@/views/Message.vue'),
+		meta:{
+		    istoken:true
+		}
+	},
+    {
+        path:'*',
+        redirect:'/home'
+    }
+]
+const router=new VueRouter({
+    mode:"history",
+    routes
+})
+router.beforeEach((to,from,next)=>{
+    if(to.meta.istoken){
+         if(Vuex.state.islogin){
+             next()
+         }else{
+            next({
+               path:'/login'
+            }) 
+         }
+    }else{
+        next()
+    }   
+    })
+export default router
