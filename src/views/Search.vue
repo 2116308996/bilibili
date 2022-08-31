@@ -22,7 +22,7 @@
 		props: [''],
 		data() {
 			return {
-               value:''
+               value:'',
 			}
 		},
 		components: {},
