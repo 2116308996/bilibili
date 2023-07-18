@@ -9,14 +9,14 @@
     placeholder="请输入账号" 
     style="margin: 15px 0;" 
     rule="^.{6,16}$" 
-    @inputChange="res=> username = res">
+    @inputChange="res=> this.username = res">
     </login-text>
 
     <login-text label="密码" 
     type="password" 
     placeholder="请输入密码"
     rule="^.{6,16}$"
-    @inputChange="res=> password = res">
+    @inputChange="res=> this.password = res">
     </login-text>
 
     <login-btn btntext="登录"
@@ -34,7 +34,8 @@ import LoginBtn from '@/components/common/LoginBtn.vue'
     props:[''],
     data () {
       return {
-
+          username:"",
+		  password:""
       };
     },
 
@@ -60,6 +61,7 @@ import LoginBtn from '@/components/common/LoginBtn.vue'
            this.$router.push('/home')
            
          }else{
+			 console.log(this.username,this.passworld)
            this.$notify({ type: 'danger', message: '账号或密码错误' });
          }
         }
