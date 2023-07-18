@@ -7,7 +7,7 @@
     <user-detail></user-detail>
     <user-message></user-message>
     <copy-right></copy-right>
-  </div>
+  </div> 
 </template>
 
 <script>
